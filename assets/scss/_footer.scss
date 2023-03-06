@@ -1,0 +1,127 @@
+footer{
+    background-color: #1E212C;
+    padding: 50px 0;
+    color: white;
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .left{
+            width: 25%;
+            &__p{
+                font-size: 13px;
+            }
+            &__ul{
+                display: flex;
+                gap: 15px;
+                padding-left: 0;
+                li{
+                    a{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .center{
+            width: 42%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            ul{
+                padding-left: 0;
+                margin-top: 0;
+                li{
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 23%;
+            &__p{
+                font-size: 13px;
+            }
+            &__h3{
+                color: white;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            input{
+                background: rgba(255, 255, 255, 0.12);
+                border: none;
+                font-size: 14px;
+                padding: 6px 14px;
+            }
+        }
+    }
+    .top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: #ff402a;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        border: 1.5px solid #ff402a;
+        a{
+            color: white;
+        }
+    }
+    .top:hover{
+        background-color: white;
+        color: #ff402a;
+        font-size: 24px;
+        font-weight: 900;
+        transform: rotate(360deg);
+        box-shadow: 0 0 12px white;
+        a:hover{
+            color: red;
+        }
+    }
+}
+
+@media(max-width:856px){
+    footer{
+        .contain{
+            .left{
+                width: 48%;
+            }
+            .right{
+                width: 48%;
+            }
+            .center{
+                width: 100%;
+                order: 2;
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    footer{
+        .contain{
+            text-align: center;
+            .left{
+                width: 100%;
+                ul{
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+            .right{
+                width: 100%;
+            }
+            .center{
+                width: 100%;
+                order: 2;
+                ul{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

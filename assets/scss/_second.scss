@@ -1,0 +1,58 @@
+.second{
+    padding: 80px 0;
+    background-image: url(../media/circles.png);
+    background-repeat: no-repeat;
+    background-position: right 80%;
+    background-size: 10%;
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .left{
+            width: 50%;
+            img{
+                height: 100%;
+            }
+        }
+        .right{
+            width: 48%;
+            &__span{
+                font-size: 13px;
+                font-weight: 500;
+            }
+            &__h2{
+                margin-top: 0;
+                font-weight: 600;
+                font-size: 26px;
+            }
+            &__ul{
+                font-size: 14px;
+                li{
+                    list-style-image: url(../media/check.png);
+                    margin: 4px 0;
+                }
+            }
+            &__button{
+                background-color: #ff403a;
+                color: white;
+                border: 1px solid #ff403a;
+                border-radius: 8px;
+                padding: 8px 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:700px){
+    .second{
+        .contain{
+            .left, .right{
+                width: 100%;
+                text-align: center;
+                &__ul{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

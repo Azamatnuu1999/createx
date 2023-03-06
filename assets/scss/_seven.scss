@@ -1,0 +1,198 @@
+.seven{
+    background-color: #F4F5F7;
+    padding: 90px 0;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            &__span{
+                font-size: 13px;
+                font-weight: 500;
+            }
+            &__h2{
+                font-weight: 700;
+                margin-top: 0;
+            }
+            }
+        .right{
+            &__btn{
+                color: grey;
+                border: none;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            }
+            &__btn:hover{
+                color: red;
+            }
+        }   
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card1{
+            width: 23%;
+            &__img{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .bottom{
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                    display: none;
+                }
+            }
+            &__name{
+                h5{
+                    margin: 10px 0 0;
+                    text-align: center;
+                    font-weight: 600;
+                }
+                p{
+                    text-align: center;
+                    margin: 5px 0;
+                    font-size: 14px;
+                }
+            }
+            &__img:hover{
+                background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+                img{
+                    opacity: 0.7;
+                }
+                .bottom{
+                    display: block;
+                    font-size: 20px;
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+    .bottom{
+        padding: 40px 0;
+        &__p{
+            font-weight: 500;
+            font-size: 13px;
+            text-align: center;
+        }
+        &__h3{
+            font-weight: 700;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .slider{
+            width: 90%;
+            margin: 0 auto;
+            ul{
+                padding-left: 0;
+                li{
+                    width: 100%;
+                    background-color: white;
+                    color: black;
+                    padding: 50px 70px;
+                    height: 400px;
+                    ul{
+                        padding-left: 0;
+                        li{
+                            list-style-image: url(../media/braces.png);
+                            .bottom{
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                font-size: 14px;
+                                img{
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:850px){
+    .seven{
+        .contain{
+            .bottom{
+                .slider{
+                    width: 100%;
+                    ul{
+                        align-items: center;
+                        li{
+                            padding: 10px 20px;
+                            padding-left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .seven{
+        .contain{
+            .main{
+                .card1{
+                    width: 48%;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .seven{
+        .contain{
+            .bottom{
+                .slider{
+                    ul{
+                        li{
+                            ul{
+                                li{
+                                    p{
+                                        margin-left: -30px;
+                                        font-size: 13px;
+                                        margin-bottom: 0;
+                                    }
+                                    .bottom{
+                                        margin-left: -30px;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    .seven{
+        .contain{
+            .top{
+                flex-wrap: wrap;
+                .left{
+                    width: 100%;
+                }
+                .right{
+                    margin-left: auto;
+                }
+            }
+            .main{
+                .card1{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
